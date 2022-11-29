@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+}
+.navRightSection {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+h1,
+p {
+  color: white;
+}
+.navLogin {
+  color: #eb315a;
+}

@@ -1,0 +1,11 @@
+.navLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
