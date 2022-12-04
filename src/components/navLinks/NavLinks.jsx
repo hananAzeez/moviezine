@@ -2,7 +2,7 @@ import styles from "./NavLinks.module.css";
 
 const NavLinks = () => {
   return (
-    <div className={`${styles.navLinks} container`}>
+    <div className={`${styles.navLinks} container text-base`}>
       <a href="">Home</a>
       <a href="">Movies</a>
       <a href="">Celebrities list</a>
