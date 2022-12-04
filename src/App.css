@@ -1,10 +1,14 @@
-.layout {
+.hero {
+  background-color: #13161f;
   background-image: url(/images/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
   object-fit: cover;
   position: relative;
+}
+.layout {
+  background-color: #13161f;
 }
 /* .layout:before {
   content: "";
