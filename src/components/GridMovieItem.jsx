@@ -3,7 +3,7 @@ import Rating from "./Rating";
 const getPosterUrl = (poster_path) => {
   return `https://www.themoviedb.org/t/p/w220_and_h330_face/${poster_path}`;
 };
-const GridMovieItem = ({ poster_path, title, vote_count }) => {
+const GridMovieItem = ({ poster_path, title, vote_count, vote_average }) => {
   return (
     <div className="w-60 flex flex-col">
       <img
@@ -13,7 +13,7 @@ const GridMovieItem = ({ poster_path, title, vote_count }) => {
       />
       <div>
         <h2 className="mb-2 text-2xl">{title}</h2>
-        <Rating voteCount={vote_count} />
+        <Rating voteCount={vote_count} rating={vote_average} />
       </div>
     </div>
   );
