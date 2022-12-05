@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useEffect } from "react";
-import axios from "axios";
 
 //components
 import GridMovieItem from "../GridMovieItem";
@@ -11,6 +9,7 @@ const MovieGrid = () => {
   // const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState("popular");
   const { data, isPending, error } = useFetch(currentPage);
+  console.log(data);
 
   return (
     <div className="container">
@@ -23,7 +22,7 @@ const MovieGrid = () => {
           <li
             onClick={() => setCurrentPage("latest")}
             className={
-              currentPage === "latest" && "border-b-2 border-[#eb315a]"
+              currentPage === "latest" && "border-b-2 border-[#eb315a] "
             }
           >
             Latest
